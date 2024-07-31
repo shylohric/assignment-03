@@ -9,43 +9,10 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
 </head>
 <body>
-  <!--bootstrap navbar insert on all pages-->
-  <!--image source https://tattooicon.com/products/anchor-temporary-tattoo-set-of-2 issue ignoring styling on the image-->
-  <!--
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    
-    
-    <a class="navbar-brand" href="#">Brighton Fish Museum</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home<span class="sr-only">Museum</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="breeds.html">Breeds of Fishes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="tickets.html">Tickets</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Exhibts
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Large animals</a>
-            <a class="dropdown-item" href="#">Fresh water tanks</a>
-            <a class="dropdown-item" href="#">Salt water tanks</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav> -->
+  <!--kept navbar consistent throughout all pages, had issues with the logo background color-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="https://tattooicon.com/cdn/shop/products/105_1200x1200.jpg?v=1527509224" width="50" height="50" alt="">
       </a>
       
@@ -55,24 +22,21 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Brighton Fishing Museum</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="breeds.html">Breeds of Fish</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="tickets.html">Tickets</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -94,13 +58,18 @@
       <img  src="data:image/jpeg;base64,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">
     </div>
   </div>
-  <h2 class="center">History of Brighton Fishing Industry</h2>
-  <!--paragraph was taken from https://en.wikipedia.org/wiki/Brighton_Fishing_Museum-->
-  <p>There has been a fishing industry on the Brighton beach for over one thousand years, the seafront arches in the fishing quarter have been in continuous use by the fishing community since they were built in the 1860s. In earlier times there were wooden netshops and rope houses on the beach below a natural cliff. Capstans were used to haul up boats that were then ranged along the beach in front of the arches and workshops. Nets were spread out to dry on the beach or upon the railings of the esplanade.</p>
-  <!--source of image https://www.pinterest.com/johnsantuccio/vintage-fishing-boats/-->
-  <div class="image">
-  <img src="https://i.pinimg.com/550x/cb/a2/71/cba271a22f737a38952770a4cb3570b4.jpg" alt="old fishing boat">
+  <!--Seprated the two p and img elements to create a better looking website could reverse the second container to make the page more intresting-->
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md">
+          <h2>Histroy of the Fishing Industry in Brighton</h2>
+          <p>There has been a fishing industry on the Brighton beach for over one thousand years, the seafront arches in the fishing quarter have been in continuous use by the fishing community since they were built in the 1860s. In earlier times there were wooden netshops and rope houses on the beach below a natural cliff. Capstans were used to haul up boats that were then ranged along the beach in front of the arches and workshops. Nets were spread out to dry on the beach or upon the railings of the esplanade.</p>
+        </div>
+        <div class="col-sm-12 col-md">
+            <!--source of image https://www.cjm-photography.co.uk/beauty-natural-world/beautiful-england-mersea-island-essex-england/cj6-8444-old-fishing-boat-13511372.html-->
+            <img src="https://www.cjm-photography.co.uk/t/575/cj6-8444-old-fishing-boat-13511372.jpg.webp" alt="old boat">
+        </div>
+    </div>
   </div>
-</div>
 </body>
 </html>

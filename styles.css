@@ -1,0 +1,17 @@
+.image {
+    width: 100;
+    margin: auto;
+    display: block;
+}
+body{
+    background: rgb(98,118,203);
+    background: linear-gradient(90deg, rgba(98,118,203,1) 35%, rgba(209,160,194,1) 100%);
+}
+p {
+    font-weight: bold;
+}
+nav:not(nostyles) {
+    background: rgb(98,118,203);
+    background: linear-gradient(90deg, rgba(98,118,203,1) 35%, rgba(209,160,194,1) 100%);  
+}
+
